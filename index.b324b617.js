@@ -1,0 +1,2 @@
+var e=document.querySelector(".logo"),n=new Promise(function(n,o){e.addEventListener("click",function(){n("Promise was resolved!")})}),o=new Promise(function(e,n){setTimeout(function(){n(Error("Promise was rejected!"))},3e3)});n.then(function(e){document.body.insertAdjacentHTML("beforeend",'<div class="message">'.concat(e,"</div>"))}),o.catch(function(e){document.body.insertAdjacentHTML("beforeend",'<div class="message error-message">'.concat(e.message,"</div>"))});
+//# sourceMappingURL=index.b324b617.js.map
